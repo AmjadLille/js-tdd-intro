@@ -5,7 +5,7 @@ const capitalizeFirst = (str) => {
   return str.replace(/(^\w{1})|(\s{1}\w{1})/g, (sent) => sent.toUpperCase());
 };
 
-// Check that capitalizeFirst is a String
+// Check that capitalizeFirst many words
 assert.strictEqual(capitalizeFirst("i am learning TDD"), "I Am Learning TDD", "must capitalize all first letter of words");
 
 // Check that it works for a 1-character string
